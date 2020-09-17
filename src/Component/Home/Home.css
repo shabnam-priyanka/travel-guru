@@ -1,0 +1,33 @@
+body{
+    background-image: url('../../Image/back.png');
+    /* opacity: .5; */
+    /* opacity: 0.5; */
+}
+
+/* .back{
+    background-repeat: no-repeat;   
+    background-size: cover;     
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+} */
+.background{
+    color: white;
+}
+
+.para{
+    float: left;
+    margin-top: 180px;
+    width: 40%;
+}
+.image img{
+    height: 300px;
+    margin-top:180px;
+    margin-left: 80px;
+
+}
