@@ -40,9 +40,9 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <PrivateRoute path="/hotel">
+          <Route path="/hotel">
             <Hotel />
-          </PrivateRoute>
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>

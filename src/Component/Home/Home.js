@@ -38,6 +38,7 @@ const Home = () => {
 
     
         const {id} = useParams();
+        console.log();
     // const bookingClick = (event) => {
     //     let book = event.target.id;
     // }
@@ -50,9 +51,10 @@ const Home = () => {
                 <div className=' para'>
                     <h1>{fakeData[1].name} </h1>
                     <p>{fakeData[1].details} </p>
+
                     
                 <br/>
-                <Link to={"/booking/"+1}><Button variant="success">Booking {id} </Button></Link>
+                <Link to={"/booking/"+fakeData[1].id}><Button variant="success">Booking {id} </Button></Link>
             
                 </div>
 
