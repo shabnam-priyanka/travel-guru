@@ -2,9 +2,11 @@
     background-color: white;
     height: 550px;
     width: 700px;
-    margin-top: 180px;
-    margin-left: 80px;
-    align-items: center;
+    margin-top: 150px;
+    margin-left: 400px;
+    margin-bottom: 150px;
+    
+    text-align: center;
     border-radius: 15px;
 
 }

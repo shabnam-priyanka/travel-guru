@@ -1,5 +1,4 @@
 import React, { createContext, useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -14,10 +13,8 @@ import Login from './Component/Login/Login';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import Hotel from './Component/Hotel/Hotel';
 
+
 export const UserContext = createContext();
-
-
-
 
 
 function App() {
@@ -26,11 +23,11 @@ function App() {
 
   return (
     
-    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-  <p>Name:{loggedInUser.name} </p>
+    <UserContext.Provider value={{loggedInUser, setLoggedInUser}}>
+      <p style={{ color: 'white' }}>Name: {loggedInUser.name}  </p>   
   <Router>
     <Header></Header>
-     <Switch>
+    <Switch>
           <Route path="/home">
             <Home />
           </Route>
@@ -40,9 +37,9 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/hotel">
+          <PrivateRoute path="/hotel">
             <Hotel />
-          </Route>
+          </PrivateRoute>
           <Route exact path="/">
             <Home />
           </Route>

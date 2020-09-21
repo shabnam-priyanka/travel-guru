@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Button, Form, FormControl, Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from '../../Logo.png';
 import './Header.css';
@@ -20,8 +20,8 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav" style={{marginLeft:'560px'}}>
                     <Nav className="mr-auto">
                         <Nav.Link style={{color:'white'}} href="#home">Home</Nav.Link>
-                        <Nav.Link style={{color:'white'}} href="#home">Trip Ideas</Nav.Link>
-                        <Nav.Link style={{color:'white'}} href="#home">Places to Visit</Nav.Link>
+                        <Nav.Link style={{color:'white'}} href="#home">Destination</Nav.Link>
+                        <Nav.Link style={{color:'white'}} href="#home">Blog</Nav.Link>
                         <Nav.Link style={{color:'white'}} href="#link">Contact Us</Nav.Link>
                         <Button variant="success">Log In</Button>
 
