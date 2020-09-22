@@ -108,7 +108,7 @@ const Login = () => {
         <input type='email' name='email' onBlur={handleBlur} placeholder='email' className='long' required />
         <br />
         <br />
-        <input type='password' name='password' onBlur={handleBlur} placeholder='password' className='long' required />
+        <input type='password' name='password' onBlur={handleBlur} placeholder='password must be 8 character letter and number' className='long' required />
 
         <br />
         <br />
